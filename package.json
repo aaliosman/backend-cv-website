@@ -1,0 +1,34 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "concurrently \" nodemon ./server/app.js \" \"parcel watch ./client/index.html --public-url ./static/ \"  ",
+    "build": "parcel build ./client/index.html --public-url ./static/ ",
+    "start": "  node ./server/app.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "mongoose": "^6.2.7",
+    "parcel": "^2.3.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.2.1",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
